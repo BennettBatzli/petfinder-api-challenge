@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Petfinder API Challenge</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/vendors/Skeleton-2.0.4/css/normalize.css">
+    <link rel="stylesheet" href="/vendors/Skeleton-2.0.4/css/skeleton.css">
+
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/clientapp.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/homeController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/dogController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/catController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/pigController.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="two columns">
+                <header ng-include="'/views/templates/header.html'"></header>
+            </div>
+            <div class="ten columns">
+                <img id="cat-picture" src="http://d1udmfvw0p7cd2.cloudfront.net/wp-content/uploads/2015/11/p10-ark-a-20151130.jpg" alt="Cute cat picture" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <section ng-include="'/views/templates/nav.html'"></section>
+                <main ng-view></main>
+                <footer ng-include="'/views/templates/footer.html'"></footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    background-color: rgba(168, 255, 235, 0.38);
+}
+
+.two {
+    text-align: left;
+    z-index: 1;
+}
+
+.twelve {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 3em;
+}
+
+#cat-picture {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    /*float: right;*/
+    margin: 2% 7% 0 14%;
+    border-radius: 10px;
+}
+
+.pet-image {
+    display: block;
+    width: 15%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.navigators {
+    list-style-type: none;
+}
+
+.navigators li {
+    display: inline-block;
+    color: #65c3df;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 2% 0 2%;
+}
